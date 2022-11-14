@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- (1)importo prima Vue Js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- chiamo proprietà message di data -->
+        <h1>{{message}}</h1>
+        <hr>
+        <!-- bonus -->
+        <!-- aggiunto foto con v-bind , ci permette di inserire variabile dentro un attributo tag -->
+        <img :src= "url" alt="">
+        <!-- bonus -->
+        <hr>
+        <!-- v-model ci permette di monitorare il value di input -->
+        <input type="text" v-model='nome'>
+        <span>Ciao {{nome}}</span>
+        <!-- test di un button -->
+        <hr>
+        <span>Inserisci prima il tuo nome sopra</span>
+        <button @click='saluta'>Cliccami !</button>
+    </div>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
